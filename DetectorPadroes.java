@@ -26,15 +26,15 @@ public class DetectorPadroes {
             if (java.util.Arrays.equals(padraoAtual, vetorPadrao)) {
                 quantidade++;
             }
-            
+
         }
 
         return quantidade;
     }
 
     public static void main(String[] args) {
-        int[] vetorPadrao = {3, 7};
-        int[] vetorValores = {1, 5, 6, 3, 7, 9, 4, 3, 7};
+        int[] vetorPadrao = {1, 5, 6, 3, 7, 4, 3, 7};
+        int[] vetorValores = {3, 7};
 
         try {
             DetectorPadroes detector = new DetectorPadroes(vetorPadrao, vetorValores);
@@ -46,3 +46,4 @@ public class DetectorPadroes {
         }
     }
 }
+
